@@ -1,0 +1,45 @@
+{
+  "name": "chili-smart-contracts",
+  "description": "🎛 all contracts for the chiliswap protocol",
+  "version": "0.1.0",
+  "homepage": "https://chiliswap.io",
+  "repository": {
+    "type": "git"
+  },
+  "files": [
+    "contracts",
+    "build"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile --force",
+    "generate": "node ./scripts/generate.js",
+    "deploy": "npx hardhat run scripts/deployer.js",
+    "deploy:network": "npx hardhat run scripts/deployer.js --network",
+    "coverage": "npx hardhat coverage --solcoverjs ./.solcover.js",
+    "lint": "npx hardhat check"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-verify": "^1.1.1",
+    "@nomiclabs/hardhat-ethers": "2.0.6",
+    "@nomiclabs/hardhat-solhint": "2.0.1",
+    "@nomiclabs/hardhat-waffle": "2.0.3",
+    "chai": "4.3.6",
+    "ethereum-waffle": "3.4.4",
+    "ethers": "5.6.8",
+    "hardhat": "^2.17.1",
+    "hardhat-dependency-compiler": "1.1.3",
+    "hardhat-gas-reporter": "1.0.8",
+    "mochawesome": "7.1.3",
+    "solhint": "3.3.7",
+    "solidity-coverage": "0.7.21"
+  },
+  "dependencies": {
+    "art-template": "4.13.2"
+  }
+}
